@@ -1,0 +1,771 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\Lydian Salwa\Documents
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1665
+    content: "\e[?9001h\e[?1004h"
+  - delay: 147
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 14
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 282
+    content: 'PS C:\Users\Lydian Salwa\Documents> '
+  - delay: 108801
+    content: "\e[?25l"
+  - delay: 13
+    content: "\e[93mm\e[?25h"
+  - delay: 337
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 263
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;37Hmys\e[?25h"
+  - delay: 203
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[6;37Hmysq\e[?25h"
+  - delay: 310
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;37Hmysql\e[?25h"
+  - delay: 990
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[6;37Hmysql \e[?25h"
+  - delay: 649
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;37Hmysql \e[37m-\e[?25h"
+  - delay: 391
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[6;37Hmysql \e[90m-u\e[?25h"
+  - delay: 148
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[?25h"
+  - delay: 260
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 112
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 81
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 269
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 398
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 199
+    content: "\e[m\e[?25l"
+  - delay: 22
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 363
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[6;37Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 823
+    content: "\e[m"
+  - delay: 10
+    content: "\r\n"
+  - delay: 74
+    content: E
+  - delay: 20
+    content: 'nter password: '
+  - delay: 857
+    content: '*'
+  - delay: 231
+    content: '*'
+  - delay: 101
+    content: '*'
+  - delay: 102
+    content: '*'
+  - delay: 253
+    content: '*'
+  - delay: 291
+    content: '*'
+  - delay: 191
+    content: '*'
+  - delay: 224
+    content: '*'
+  - delay: 102
+    content: '*'
+  - delay: 207
+    content: '*'
+  - delay: 3960
+    content: '*'
+  - delay: 510
+    content: '*'
+  - delay: 291
+    content: '*'
+  - delay: 418
+    content: '*'
+  - delay: 304
+    content: "\r\n"
+  - delay: 72
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 21
+    content: "\e[?25l\r\nYour MariaDB connection id is 37\r\nServer version: 11.8.5-MariaDB MariaDB Server\e[12;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[14;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[16;1HMariaDB [(none)]> \e[?25h"
+  - delay: 7197
+    content: u
+  - delay: 343
+    content: s
+  - delay: 257
+    content: e
+  - delay: 654
+    content: ' '
+  - delay: 228
+    content: p
+  - delay: 175
+    content: e
+  - delay: 220
+    content: r
+  - delay: 1244
+    content: p
+  - delay: 288
+    content: u
+  - delay: 216
+    content: s
+  - delay: 147
+    content: t
+  - delay: 126
+    content: a
+  - delay: 188
+    content: k
+  - delay: 82
+    content: a
+  - delay: 140
+    content: a
+  - delay: 145
+    content: 'n'
+  - delay: 733
+    content: ;
+  - delay: 8650
+    content: "\b \b"
+  - delay: 536
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 37
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 176
+    content: "\b \b"
+  - delay: 166
+    content: "\b \b"
+  - delay: 1664
+    content: e
+  - delay: 201
+    content: r
+  - delay: 156
+    content: p
+  - delay: 242
+    content: u
+  - delay: 204
+    content: s
+  - delay: 124
+    content: t
+  - delay: 107
+    content: a
+  - delay: 188
+    content: k
+  - delay: 103
+    content: a
+  - delay: 122
+    content: a
+  - delay: 96
+    content: 'n'
+  - delay: 755
+    content: ;
+  - delay: 195
+    content: "\r\n"
+  - delay: 10
+    content: "Database changed\r\nMariaDB [perpustakaan]> "
+  - delay: 2905
+    content: s
+  - delay: 368
+    content: h
+  - delay: 263
+    content: o
+  - delay: 324
+    content: w
+  - delay: 190
+    content: ' '
+  - delay: 546
+    content: d
+  - delay: 138
+    content: a
+  - delay: 97
+    content: t
+  - delay: 133
+    content: a
+  - delay: 479
+    content: b
+  - delay: 103
+    content: a
+  - delay: 168
+    content: s
+  - delay: 143
+    content: e
+  - delay: 135
+    content: s
+  - delay: 1033
+    content: ;
+  - delay: 140
+    content: "\r\n"
+  - delay: 12
+    content: "+--------------------+\r\n| Database           |\r\n+--------------------+\r\n| information_schema |\r\n| mysql              |\r\n| performance_schema |\r\n| perpustakaan       |\r\n| restaurant         |\r\n| sys                |\r\n| test               |\r\n+--------------------+\r\n7 rows in set (0.002 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 1715
+    content: s
+  - delay: 156
+    content: e
+  - delay: 373
+    content: l
+  - delay: 187
+    content: e
+  - delay: 154
+    content: c
+  - delay: 175
+    content: t
+  - delay: 719
+    content: ' '
+  - delay: 382
+    content: d
+  - delay: 150
+    content: a
+  - delay: 94
+    content: t
+  - delay: 142
+    content: a
+  - delay: 394
+    content: b
+  - delay: 143
+    content: a
+  - delay: 144
+    content: s
+  - delay: 131
+    content: e
+  - delay: 403
+    content: (
+  - delay: 146
+    content: )
+  - delay: 773
+    content: ;
+  - delay: 462
+    content: "\r\n+--------------+\r\n| database()   |\r\n+--------------+\r\n| perpustakaan |\r\n+--------------+\r\n1 row in set (0.001 sec)\r\n"
+  - delay: 10
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 21876
+    content: s
+  - delay: 188
+    content: e
+  - delay: 216
+    content: l
+  - delay: 151
+    content: e
+  - delay: 225
+    content: c
+  - delay: 164
+    content: t
+  - delay: 925
+    content: ' '
+  - delay: 1406
+    content: '*'
+  - delay: 273
+    content: ' '
+  - delay: 385
+    content: f
+  - delay: 565
+    content: r
+  - delay: 87
+    content: o
+  - delay: 157
+    content: m
+  - delay: 182
+    content: ' '
+  - delay: 184
+    content: a
+  - delay: 112
+    content: 'n'
+  - delay: 185
+    content: g
+  - delay: 95
+    content: g
+  - delay: 192
+    content: o
+  - delay: 253
+    content: t
+  - delay: 108
+    content: a
+  - delay: 555
+    content: ;
+  - delay: 119
+    content: "\r\n+------------+--------------+------------------+------------+\r\n| id_anggota | nama         | alamat           | no_telepon |\r\n+------------+--------------+------------------+------------+"
+  - delay: 5
+    content: "\r\n|          1 | Rani Kusuma  | Jl. Melati No. 5 | NULL       |\r\n|          2 | Dedi Santoso | Jl. Mawar No. 12 | NULL       |\r\n+------------+--------------+------------------+------------+\r\n2 rows in set (0.001 sec)\r\n\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 2655
+    content: s
+  - delay: 205
+    content: e
+  - delay: 159
+    content: l
+  - delay: 76
+    content: e
+  - delay: 213
+    content: c
+  - delay: 215
+    content: t
+  - delay: 959
+    content: ' '
+  - delay: 275
+    content: '*'
+  - delay: 270
+    content: ' '
+  - delay: 414
+    content: f
+  - delay: 179
+    content: r
+  - delay: 299
+    content: o
+  - delay: 178
+    content: m
+  - delay: 164
+    content: ' '
+  - delay: 789
+    content: b
+  - delay: 160
+    content: u
+  - delay: 173
+    content: k
+  - delay: 157
+    content: u
+  - delay: 527
+    content: ;
+  - delay: 172
+    content: "\r\n"
+  - delay: 7
+    content: "+---------+-----------------------------+---------------+--------------+---------------+\r\n| id_buku | judul                       | penulis       | tahun_terbit | isbn          |\r\n+---------+-----------------------------+---------------+--------------+---------------+\r\n|       1 | Algoritma Terapan           | Joko Purnomo  |         2020 | 9786024456789 |\r\n|       2 | Belajar MariaDB             | anonim        |         2021 | 9786027788990 |\r\n|       3 | Manajemen Basis Data Modern | anonim        |         2020 | 9786021123456 |\r\n|       5 | pedoman membuat database    | ahmad yani    |         2021 | 986051624378  |\r\n|       6 | statistika                  | khawarizmi    |         2021 | 986051423715  |\r\n|       7 | berani tidak disukai        | ichimi kisiro |         2023 | 986041892479  |\r\n+---------+-----------------------------+---------------+--------------+---------------+\r\n6 rows in set (0.006 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 1436
+    content: s
+  - delay: 180
+    content: e
+  - delay: 144
+    content: l
+  - delay: 117
+    content: e
+  - delay: 288
+    content: c
+  - delay: 218
+    content: t
+  - delay: 732
+    content: ' '
+  - delay: 5051
+    content: '*'
+  - delay: 691
+    content: ' '
+  - delay: 2947
+    content: f
+  - delay: 163
+    content: r
+  - delay: 363
+    content: o
+  - delay: 137
+    content: m
+  - delay: 207
+    content: ' '
+  - delay: 573
+    content: p
+  - delay: 184
+    content: e
+  - delay: 169
+    content: m
+  - delay: 156
+    content: i
+  - delay: 288
+    content: j
+  - delay: 658
+    content: "\b \b"
+  - delay: 527
+    content: 'n'
+  - delay: 219
+    content: j
+  - delay: 82
+    content: a
+  - delay: 99
+    content: m
+  - delay: 100
+    content: a
+  - delay: 109
+    content: 'n'
+  - delay: 764
+    content: ;
+  - delay: 1494
+    content: "\r\n+---------------+------------+---------+----------------+-----------------+\r\n| id_peminjaman | id_anggota | id_buku | tanggal_pinjam | tanggal_kembali |\r\n+---------------+------------+---------+----------------+-----------------+\r\n|             2 |          1 |       3 | 2025-02-01     | 2025-02-08      |\r\n|             3 |          2 |       5 | 2025-03-10     | 2025-03-17      |\r\n|             4 |          1 |       6 | 2025-05-26     | 2025-05-30      |\r\n|             5 |          1 |       6 | 2025-11-03     | 2025-11-08      |\r\n|             6 |          2 |       7 | 2025-10-15     | 2025-10-20      |\r\n+---------------+------------+---------+----------------+-----------------+\r\n5 rows in set (0.004 sec)\r\n"
+  - delay: 16
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 12127
+    content: s
+  - delay: 158
+    content: e
+  - delay: 186
+    content: l
+  - delay: 123
+    content: e
+  - delay: 303
+    content: c
+  - delay: 166
+    content: t
+  - delay: 567
+    content: ' '
+  - delay: 303
+    content: o
+  - delay: 1346
+    content: "\b \b"
+  - delay: 582
+    content: j
+  - delay: 152
+    content: u
+  - delay: 638
+    content: d
+  - delay: 131
+    content: u
+  - delay: 263
+    content: l
+  - delay: 319
+    content: ','
+  - delay: 608
+    content: ' '
+  - delay: 134
+    content: p
+  - delay: 169
+    content: e
+  - delay: 203
+    content: 'n'
+  - delay: 188
+    content: u
+  - delay: 206
+    content: l
+  - delay: 180
+    content: i
+  - delay: 240
+    content: s
+  - delay: 548
+    content: ' '
+  - delay: 2105
+    content: o
+  - delay: 282
+    content: r
+  - delay: 218
+    content: d
+  - delay: 154
+    content: e
+  - delay: 226
+    content: r
+  - delay: 101
+    content: ' '
+  - delay: 406
+    content: b
+  - delay: 159
+    content: 'y'
+  - delay: 112
+    content: ' '
+  - delay: 2342
+    content: j
+  - delay: 143
+    content: u
+  - delay: 225
+    content: d
+  - delay: 94
+    content: u
+  - delay: 392
+    content: l
+  - delay: 121
+    content: ' '
+  - delay: 918
+    content: a
+  - delay: 1313
+    content: s
+  - delay: 327
+    content: c
+  - delay: 6355
+    content: "\b"
+  - delay: 514
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 45
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 316
+    content: "\b"
+  - delay: 939
+    content: "\e[?25l  order by judul asc\e[30;47H\e[?25h"
+  - delay: 265
+    content: "\e[?25lf order by judul asc\e[30;48H\e[?25h"
+  - delay: 202
+    content: "\e[?25lr order by judul asc\e[30;49H\e[?25h"
+  - delay: 166
+    content: "\e[?25lo order by judul asc\e[30;50H\e[?25h"
+  - delay: 573
+    content: "\e[?25lm order by judul asc\e[30;51H\e[?25h"
+  - delay: 133
+    content: "\e[?25l  order by judul asc\e[30;52H\e[?25h"
+  - delay: 203
+    content: "\e[?25lb order by judul asc\e[30;53H\e[?25h"
+  - delay: 183
+    content: "\e[?25lu order by judul asc\e[30;54H\e[?25h"
+  - delay: 165
+    content: "\e[?25lk order by judul asc\e[30;55H\e[?25h"
+  - delay: 149
+    content: "\e[?25lu order by judul asc\e[30;56H\e[?25h"
+  - delay: 412
+    content: "\e[1C"
+  - delay: 520
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 640
+    content: ;
+  - delay: 139
+    content: "\r\n+-----------------------------+---------------+\r\n| judul                       | penulis       |\r\n+-----------------------------+---------------+\r\n| Algoritma Terapan           | Joko Purnomo  |\r\n| Belajar MariaDB             | anonim        |\r\n| berani tidak disukai        | ichimi kisiro |\r\n| Manajemen Basis Data Modern | anonim        |\r\n| pedoman membuat database    | ahmad yani    |\r\n| statistika                  | khawarizmi    |\r\n+-----------------------------+---------------+\r\n6 rows in set (0.001 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [perpustakaan]>\e[1C"
+  - delay: 5626
+    content: ^D
+  - delay: 1367
+    content: "\e[?25l\e[30;25H  \e[30;25H\e[?25h"
+  - delay: 2566
+    content: ^D
+  - delay: 955
+    content: "\e[?25l\e[30;25H  \e[30;25H\e[?25h"
+  - delay: 1589
+    content: ^D
+  - delay: 1281
+    content: "\e[?25l\e[30;25H  \e[30;25H\e[?25h"
+  - delay: 1456
+    content: e
+  - delay: 294
+    content: x
+  - delay: 140
+    content: i
+  - delay: 269
+    content: t
+  - delay: 693
+    content: "\r\nBye"
+  - delay: 8
+    content: "\r\n"
+  - delay: 188
+    content: 'PS C:\Users\Lydian Salwa\Documents> '
+  - delay: 1446
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93me\e[?25h"
+  - delay: 1015
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\bex\e[?25h"
+  - delay: 256
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[30;37Hexi\e[?25h"
+  - delay: 252
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[92m\e[30;37Hexit\e[?25h"
+  - delay: 588
+    content: "\e[m"
+  - delay: 9
+    content: "\r\n"
